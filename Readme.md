@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Соломонова](https://up.htmlacademy.ru/htmlcss/36/user/2313423).
-* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742/achievements).
 
 ---
 
