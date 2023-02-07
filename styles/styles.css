@@ -130,7 +130,7 @@ body {
 }
 
 .hotels-filter {
-color: #ffffff;
+  color: #ffffff;
 }
 
 .hotel-card-link{
@@ -240,10 +240,15 @@ color: #ffffff;
 .search-hotel {
   width: 160px;
   height: 36px;
+  color: #ffffff;
   background-color: #756157;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 34px 8px 34px;
 }
 
 .button-search {
