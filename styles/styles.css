@@ -93,10 +93,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 25px;
+  color: #000000;
 }
 
 .header-description {
   text-align: center;
+  color: #000000;
 }
 
 .hero-welcome {
@@ -349,9 +351,6 @@ background-color: #756157;
 
 .subscribe {
   text-align: center;
-}
-.subscribe-offer {
-  color: #000000;
 }
 
 .subscribe-input {
