@@ -3,7 +3,7 @@
   font-weight: 400;
   font-style: normal;
 
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -15,18 +15,17 @@
   font-weight: 700;
   font-style: normal;
 
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
 
   font-display: swap;
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color: #e3e3dd; /* Исправить на #ffffff */
-  background-size: 100% auto;
   max-width: 100%;
   margin: 0;
 
@@ -52,21 +51,24 @@ body {
 /* Pages */
 
 .page-header {
+  display: flex;
+  height: 64px;
+  margin: 0 auto;
   color: #000000;
   background-color: #ffffff;
   max-width: 1200px;
-}
-
-.page-header-logo{
-  position: relative;
-    right: -70px;
 }
 
 .inner-header-title {
   color: #ffffff;
   font-size: 60px;
   line-height: 78px;
-  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .navigation-link {
@@ -112,7 +114,8 @@ body {
 }
 
 .hero-welcome {
-  text-align: center;
+  width: 458px;
+  margin: 0 auto;
 }
 
 .hero-background{
@@ -258,7 +261,7 @@ body {
 .recommendations-item-food {
   width: 400px;
   height: 385px;
-  background-image: url(../images/recommendations-icons/food.svg);
+  background-image: url("../images/recommendations-icons/food.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -453,6 +456,7 @@ body {
   text-decoration: none;
   max-width: 1200px;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .social-block {
