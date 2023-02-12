@@ -151,6 +151,9 @@ margin-left: auto;
 
 /* Hero */
 
+.main-index {
+  background-color: #ffffff;
+}
 .divided-icon {
   margin-top: -57px;
 }
@@ -174,7 +177,6 @@ margin-left: auto;
   display: flex;
   flex-direction: column;
   margin-bottom: 69px;
-
 }
 
 .hero-background{
@@ -242,14 +244,15 @@ margin-left: auto;
 /* Advantages*/
 
 .advantages {
-  margin-bottom: 69px;
+  padding: 0;
   margin: 0 auto;
+  margin-bottom: 64px;
 }
 
 .advantages-block {
   height: 384px;
   display: flex;
-  margin: 0  auto;
+  margin: 0 auto;
 }
 
 .advantages-image {
@@ -272,12 +275,13 @@ margin-left: auto;
   width: 230px;
   font-size: 18px;
   line-height: 21px;
-  padding: 85px;
-  padding-top: 62px;
   text-align: center;
 }
 
 .advantages-item-city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 384px;
   background-color: #82B3D3;
@@ -285,24 +289,36 @@ margin-left: auto;
 }
 
 .advantages-item-square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-road {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 385px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-tourists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-bridge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 385px;
   background-color: #82B3D3;
@@ -332,13 +348,14 @@ margin-left: auto;
 
 .recommendations-description {
   width: 230px;
-  padding-left: 85px;
   font-size: 18px;
   line-height: 21px;
-  padding-bottom: 30px;
 }
 
 .recommendations-item-houses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 385px;
   background-image: url(../images/recommendations-icons/houses.svg);
@@ -348,6 +365,9 @@ margin-left: auto;
 }
 
 .recommendations-item-food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 385px;
   background-image: url("../images/recommendations-icons/food.svg");
@@ -356,6 +376,9 @@ margin-left: auto;
 }
 
 .recommendations-item-souvenirs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 385px;
   background-image: url(../images/recommendations-icons/souvenirs.svg);
