@@ -73,6 +73,10 @@ body {
   color: #000000;
 }
 
+.navigation-logo {
+  padding: 0;
+}
+
 .inner-header-title {
   color: #ffffff;
   font-size: 60px;
@@ -116,7 +120,6 @@ margin-left: auto;
 .navigation-list {
   display: flex;
   justify-content: space-around;
-  padding-left: 30px;
   align-items: center;
 }
 
@@ -172,7 +175,6 @@ margin-left: auto;
   margin-bottom: 69px;
 
 }
-
 
 .hero-background{
   width: 1200px;
