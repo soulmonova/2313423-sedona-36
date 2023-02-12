@@ -85,14 +85,13 @@ body {
   height: 64px;
   align-items: center;
   background-color: #ffffff;
-  margin: 0 40px;
+  padding: 0 40px;
 }
 
 .user-navigation {
 display: flex;
 justify-content: flex-end;
 align-items: center;
-margin-right: 70px;
 margin-left: auto;
 }
 
