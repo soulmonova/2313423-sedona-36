@@ -623,15 +623,22 @@ margin-left: auto;
 
 /* Footer */
 
-.page-footer {
+.footer-wrapper {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
+  padding: 0 70px;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: center;
   align-items: center;
   height: 120px;
   text-decoration: none;
   max-width: 1200px;
   background-color: #ffffff;
-  margin: 0 auto;
+
 }
 
 .social-block {
@@ -640,8 +647,8 @@ margin-left: auto;
   align-items: center;
   width: 142px;
   height: 40px;
-  margin-left: 70px;
   list-style: none;
+  margin: 0;
 }
 
 .search-block {
@@ -663,5 +670,5 @@ margin-left: auto;
 
 .footer-contacts-logo {
   text-align: right;
-  margin-right: 70px;
+  padding: 0;
 }
