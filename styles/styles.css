@@ -455,7 +455,7 @@ body {
 
 .select-block {
 display: flex;
-width: 522px;
+width: 292px;
 justify-content:flex-end;
 margin-left: auto;
 }
@@ -496,8 +496,6 @@ margin-left: auto;
 
 .hotel-card {
   margin: 20px;
-  border: 1px;
-  border-color: #E6E6E6;
 }
 
 /* Boocking */
