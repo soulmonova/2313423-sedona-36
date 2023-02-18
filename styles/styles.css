@@ -513,10 +513,11 @@ margin-left: auto;
 .hotels-list {
   display: flex;
   flex-wrap: wrap;
+  width: 1060px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
-  gap: calc(100% / 3 - 20 * 2);
 }
 
 .hotel-card {
