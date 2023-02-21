@@ -319,6 +319,9 @@ body {
 }
 
 .hotel-card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  padding: 20px;
   width: 340px;
   min-height: 438px;
   background-color: #ffffff;
@@ -547,9 +550,9 @@ body {
 .hotel-info-price {
   font-size: 18px;
   line-height: 21px;
-  padding: 20px;
   grid-column: 2/3;
   grid-row: 2;
+  text-align: end;
 }
 
 /* Boocking */
@@ -637,33 +640,56 @@ body {
 
 .button-more {
   background-color: #756157;
-  padding: 8px 50px 8px 50px;
+  width: 140px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 2/3;
   grid-row: 3;
 }
 
 .button-favorites {
   background-color: #82B3D3;
-  padding: 8px 50px 8px 50px;
+  width: 140px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-row: 3;
   grid-column: 1/2;
 }
 
 .button-in-favorites {
+  width: 140px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #7DB54F;
-  padding: 8px 50px 8px 50px;
+  grid-column: 1/2;
+  grid-row: 3;
 }
 .button-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
-  height: 37px;
+  min-width: 37px;
   font-size: 16px;
   line-height: 20px;
   color: #333;
   border-radius: 4px;
   text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  padding: 9px 23px 8px 22px;
   background-color: #F2F2F2;
   grid-row: 4;
   grid-column: 2/3;
@@ -671,20 +697,17 @@ body {
 
 .hotel-card-image {
   text-align: center;
-  padding: 20px 20px 20px 20px;
 }
 
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  padding: 20px;
 }
 
 .hotel-info{
   font-size: 18px;
   line-height: 21px;
-  padding: 20px;
   grid-column: 1;
   grid-row: 2;
 }
