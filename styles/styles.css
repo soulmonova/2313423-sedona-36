@@ -88,7 +88,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 8px;
 }
 
 .hotels-filters-title {
@@ -131,7 +131,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #7DB54F;
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 5px 5px 5px 4px;
   position: absolute;
   top: 11px;
@@ -206,7 +206,8 @@ body {
 
 .inner-wrapper{
   height: 412px;
-  background-image: url(../images/hotels/filtr-background.jpg);
+  width: 100%;
+  background-image: url(../images/hotels/filter-background.jpeg);
   padding: 35px 70px 70px 70px;
 }
 
@@ -216,6 +217,7 @@ body {
   padding: 0;
   margin: 0;
   margin-right: auto;
+  margin-bottom: 40px;
 }
 
 .navigation-icon {
@@ -243,7 +245,6 @@ body {
   flex-grow: 1;
   flex-direction: column;
   background-color: #ffffff;
-
 }
 
 .divider-icon {
@@ -334,7 +335,7 @@ body {
 .hotels-form-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: -200px;
+  margin-top: -225px;
   margin-left: 0;
 }
 
@@ -563,8 +564,6 @@ body {
   cursor: pointer;
 }
 
-
-
 .select-control {
   width: 292px;
   height: 49px;
@@ -604,7 +603,7 @@ body {
 }
 
 .hotels-filter-item:hover {
-  color: rgba(255, 255, 255, 0.3); ;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-filter-item:active {
@@ -843,6 +842,99 @@ body {
 .button-light-current {
   border-color:#000000
 }
+
+.hotels-filter-title{
+  font-style:  "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.checkbox-text {
+  display: inline-block;
+  font-style: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+
+}
+
+.control-input{
+  display: none;
+}
+
+.checkbox{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.checkbox:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.checkbox:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.checkbox::after {
+  content: " ";
+  width: 12.2px;
+  height: 9.9px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/hotels/check-mark.svg);
+  opacity: 0;
+  transition: .2s;
+}
+
+.control-input:checked + .checkbox::after{
+  opacity: 1;
+}
+
+.radio {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+
+}
+
+.radio::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .2s;
+}
+
+.control-input:checked + .radio::after{
+  opacity: 1;
+}
+
+.radio:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.radio:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
 
 /* Hotel cards */
 
