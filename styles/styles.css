@@ -196,7 +196,6 @@ body {
   margin: 0;
 }
 
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -205,8 +204,8 @@ body {
 }
 
 .inner-wrapper{
+  background-size: cover;
   height: 412px;
-  width: 100%;
   background-image: url(../images/hotels/filter-background.jpeg);
   padding: 35px 70px 70px 70px;
 }
@@ -344,6 +343,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 
 
 .hotel-card-wrapper {
@@ -598,6 +598,7 @@ body {
 
 .hotels-filter-form {
   display: flex;
+  align-items: center;
   margin-left: 70px;
   width: 1060px;
 }
@@ -613,7 +614,6 @@ body {
 .filter-buttons-wrapper {
   display: flex;
   flex-direction: column;
-  margin-right: 70px;
   margin-left: auto;
 }
 
@@ -630,7 +630,7 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .hotel-card {
@@ -854,14 +854,7 @@ body {
   font-style: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 16px;
-  margin-left: 16px;
 }
-
-.control-input{
-  display: none;
-}
-
 
 .checkbox{
   display: inline-block;
@@ -881,7 +874,15 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.checkbox::after {
+.control {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.checkbox::before {
   content: " ";
   width: 12.2px;
   height: 9.9px;
@@ -894,7 +895,7 @@ body {
   transition: .2s;
 }
 
-.control-input:checked + .checkbox::after{
+.control-input:checked + .checkbox::before{
   opacity: 1;
 }
 
@@ -906,10 +907,9 @@ body {
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
-
 }
 
-.radio::after {
+.radio::before {
   content: " ";
   position: absolute;
   top: 50%;
@@ -923,7 +923,7 @@ body {
   transition: .2s;
 }
 
-.control-input:checked + .radio::after{
+.control-input:checked + .radio::before{
   opacity: 1;
 }
 
@@ -935,6 +935,73 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Range-bar*/
+
+.range-wrapper-inputs {
+  display: flex;
+  width: 288px;
+}
+.range-input-min {
+  font-style: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  color: #a9a9a9;
+  padding: 12px 20px;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.range-input-max {
+  font-style: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  color: #a9a9a9;
+  padding: 12px 20px;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 48px;
+  background-color: #5e676b;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #f2f2f2;
+  width: 288px;
+}
+
+.range-bar:hover {
+  background-color: #E6E6E6;
+}
+
+.range-bar:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #82B3D3;
+}
+
+.range-bar:active {
+  background-color: #E6E6E6;
+  border: 2px solid #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+.range-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 
 /* Hotel cards */
@@ -1107,8 +1174,22 @@ body {
   width: 1060px;
   margin: 0;
   margin-left: 70px;
+  margin-top: 80px;
   margin-bottom: 60px;
   padding: 0;
+}
+
+.hotel-card-wrapper::after {
+  content: "";
+  display: block;
+  width: 1060px;
+  height: 1px;
+  background-color: #E6E6E6;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-530px);
+  margin-bottom: 40px;
+
 }
 
 .pagination-item {
