@@ -855,12 +855,13 @@ body {
   font-weight: 400;
   margin: 0;
   margin-bottom: 16px;
-
+  margin-left: 16px;
 }
 
 .control-input{
   display: none;
 }
+
 
 .checkbox{
   display: inline-block;
