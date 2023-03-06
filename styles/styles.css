@@ -183,6 +183,10 @@ body {
   text-decoration: none;
 }
 
+.user-navigation-link:hover {
+  fill: rgba(0, 0,0, 0.5);;
+}
+
 .link-favorite {
   position: relative;
 }
