@@ -998,6 +998,7 @@ body {
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
   outline: none;
+  appearance: textfield;
 }
 
 .range-input-max {
@@ -1008,6 +1009,7 @@ body {
   padding: 12px 20px;
   border-radius: 0 4px 4px 0;
   outline: none;
+  appearance: textfield;
 }
 
 .range-input-min::-webkit-outer-spin-button,
@@ -1066,13 +1068,16 @@ body {
 
 .toggle-min {
   position: absolute;
-  margin-top: -8px;
+  top: -8px;
+  left: 0;
+
 }
 
 .toggle-max {
   position: absolute;
   left: 226px;
-  margin-top: -8px;
+  top: -8px;
+  right: 0;
 }
 
 /* Hotel cards */
@@ -1487,4 +1492,208 @@ body {
   flex-direction: column;
   flex-grow: 1;
   margin: 0;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: white;
+  width: 717px;
+  min-height: 576px;
+  border-radius: 30px;
+}
+
+.modal-title {
+  font-family: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.modal-close-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  border: none;
+  outline: none;
+  background-image: url(../images/cross-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  transform: translateY(26px);
+  cursor: pointer;
+}
+
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #82B3D3;
+}
+
+.modal-close-button:active path {
+  fill: #a1a1a1
+}
+
+.modal-search-button {
+  grid-column: 1/-1;
+  min-height: 60px;
+  background-color: #68A2CA;
+  border-radius: 10px;
+  padding: 18px 77px;
+}
+
+.modal-search-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-search-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.modal-search-button:active {
+  background-color: #68A2CA;
+  color:rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.auth-form {
+  margin: 0;
+}
+
+.auth-form-field {
+  height: 40px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-weight: 700;
+  color: black;
+  font-size: 18px;
+}
+
+.field-group {
+  display: grid;
+  grid-template-columns: 137px 198px 50px 192px;
+  grid-template-rows: repeat(3, 48px);
+  row-gap: 48px;
+  margin: 0;
+  align-items: center;
+}
+
+.arrival-date-field {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  background-image: url(../images/date-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.arrival-date-field:focus {
+  border: 3px solid #82B3D3;
+  outline: none;
+}
+
+.arrival-date-field:hover {
+  background-color: #E6E6E6;
+}
+
+.departure-date-field:focus {
+  border: 3px solid #82B3D3;
+  outline: none;
+}
+
+.departure-date-field:hover {
+  background-color: #E6E6E6;
+}
+
+.departure-date-field {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  background-image: url(../images/date-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.adults-field {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 110px;
+}
+
+.adults-field:focus {
+  border: 3px solid #82B3D3;
+  outline: none;
+}
+
+.adults-field:hover {
+  background-color: #E6E6E6;
+}
+
+.kids-field {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  width: 110px;
+  margin-left: auto;
+}
+
+.kids-field:focus {
+  border: 3px solid #82B3D3;
+  outline: none;
+}
+
+.kids-field:hover {
+  background-color: #E6E6E6;
+}
+
+.auth-label {
+  font-style: inherit;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.adults-label {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.kids-label{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  position: relative;
+}
+
+.kids-label::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #82B3D3;
+  background-image: url(../images/info-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
 }
