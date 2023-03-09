@@ -851,7 +851,22 @@ body {
   font-style:  "PT Sans", Arial, sans-serif;
   font-weight: 700;
   margin-bottom: 32px;
+
 }
+
+.hotels-filter-form {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.filter-buttons-wrapper {
+  position: absolute;
+  top: 60px;
+  left: 849px;
+}
+
+/* Checkbox */
 
 .checkbox-text {
   display: inline-block;
@@ -870,11 +885,11 @@ body {
   position: relative;
 }
 
-.checkbox:hover {
+.control:hover .checkbox{
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.checkbox:active {
+.control:active .checkbox{
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -931,25 +946,55 @@ body {
   opacity: 1;
 }
 
-.radio:hover {
+.control:hover .radio{
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.radio:active {
+.control:active .radio{
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Range-bar*/
 
+.range{
+  position: relative;
+}
+
 .range-wrapper-inputs {
   display: flex;
   width: 288px;
 }
+
+.range-filter-label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #a9a9a9;
+  text-align: right;
+  position: relative;
+}
+.text-min {
+  position: absolute;
+  margin:0;
+  margin-left: 4px;
+  top: 12px;
+  right: 20px;
+}
+
+.text-max {
+  position: absolute;
+  margin:0;
+  margin-left: 4px;
+  top: 12px;
+  right: 20px;
+}
+
 .range-input-min {
   font-style: inherit;
   font-size: 18px;
   font-weight: 400;
-  color: #a9a9a9;
+  color: black;
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
   outline: none;
@@ -959,14 +1004,19 @@ body {
   font-style: inherit;
   font-size: 18px;
   font-weight: 400;
-  color: #a9a9a9;
+  color: black;
   padding: 12px 20px;
   border-radius: 0 4px 4px 0;
   outline: none;
 }
 
+.range-input-min::-webkit-outer-spin-button,
+.range-input-max::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .range-scale {
-  position: relative;
   height: 4px;
   margin-top: 48px;
   background-color: #5e676b;
@@ -977,6 +1027,8 @@ body {
   height: 4px;
   background-color: #f2f2f2;
   width: 288px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .range-bar:hover {
@@ -990,7 +1042,6 @@ body {
 
 .range-bar:active {
   background-color: #E6E6E6;
-  border: 2px solid #000000;
 }
 
 .range-toggle {
@@ -1003,10 +1054,26 @@ body {
   outline: none;
 }
 
-.range-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+.range-toggle:focus {
+  border: 3px solid #82B3D3;
+  outline: none;
 }
 
+.range-toggle:active {
+  border: 3px solid #82B3D3;
+  outline: none;
+}
+
+.toggle-min {
+  position: absolute;
+  margin-top: -8px;
+}
+
+.toggle-max {
+  position: absolute;
+  left: 226px;
+  margin-top: -8px;
+}
 
 /* Hotel cards */
 
