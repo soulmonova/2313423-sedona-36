@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="shortcut icon" type="svg" href="images/favikon.svg">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -251,6 +252,30 @@
       </a>
     </section>
   </footer>
+
+  <div class="modal-container">
+    <div class="modal modal-auth">
+      <button class="modal-close-button"><span class="visually-hidden">Закрыть</span></button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="auth-label" for="arrival-date">Дата Заезда:</label>
+            <input class="auth-form-field arrival-date-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату"</input>
+            <label class="auth-label" for="departure-date">Дата Выезда:</label>
+            <input class="auth-form-field departure-date-field" type="text" id="departure-date" name=" departure-date" placeholder="Укажите дату"</input>
+            <label class="auth-label adults-able" for="adults">Взрослые:</label>
+            <input class="auth-form-field adults-field" type="number" id="adults" name="adults" placeholder="2"</input>
+            <label class="auth-label kids-label" for="adults">Дети:</label>
+            <input class="auth-form-field kids-field" type="number" id="kids" name="kids" placeholder="2"</input>
+            <button class="modal-search-button button" type="button">Найти</button>
+          </p>
+        </form>
+      </section>
+    </div>
+
+  </div>
+
   </div>
 </body>
 </html>
