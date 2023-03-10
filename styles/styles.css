@@ -1592,6 +1592,15 @@ body {
   font-size: 18px;
 }
 
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s;}
+
 .field-group {
   display: grid;
   grid-template-columns: 137px 198px 50px 192px;
