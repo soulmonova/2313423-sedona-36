@@ -209,7 +209,7 @@ body {
 
 .inner-wrapper{
   background-size: cover;
-  height: 412px;
+  min-height: 412px;
   background-image: url(../images/hotels/filter-background.jpeg);
   padding: 35px 70px 70px 70px;
 }
@@ -345,7 +345,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 
