@@ -332,20 +332,20 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  margin-right: 70px;
 }
 
 .hotels-form-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: -225px;
-  margin-left: 0;
+  padding: 0 70px 0 70px;
 }
 
 .form-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 
@@ -603,8 +603,8 @@ body {
 .hotels-filter-form {
   display: flex;
   align-items: center;
-  margin-left: 70px;
   width: 1060px;
+  gap: 70px;
 }
 
 .hotels-filter-item:hover {
@@ -1012,8 +1012,8 @@ body {
   appearance: textfield;
 }
 
-.range-input-min::-webkit-outer-spin-button,
-.range-input-max::-webkit-outer-spin-button {
+.range-filter-label input::-webkit-outer-spin-button,
+.range-filter-label input::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1512,6 +1512,10 @@ body {
   width: 717px;
   min-height: 576px;
   border-radius: 30px;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal-title {
