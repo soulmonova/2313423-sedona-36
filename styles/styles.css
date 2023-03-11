@@ -1523,15 +1523,14 @@ body {
 }
 
 .modal-close-button {
+  display: grid;
+  place-items: center;
   width: 52px;
   height: 52px;
   border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
   outline: none;
-  background-image: url(../images/cross-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   position: absolute;
   top: 64px;
   right: 52px;
@@ -1692,17 +1691,44 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s;}
   position: relative;
 }
 
-.kids-label::after {
+.tooltip {
   position: absolute;
-  content: "";
+  margin-top: 220px;
+  margin-left: 390px;
+}
+
+.tooltip-toggle {
+  display: grid;
+  place-items: center;
+  border: none;
+  background-color: #82B3D3;
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #82B3D3;
-  background-image: url(../images/info-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 10px;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .range-filter-label input::-webkit-outer-spin-button,
