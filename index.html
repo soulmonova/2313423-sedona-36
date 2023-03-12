@@ -252,7 +252,9 @@
     </section>
   </footer>
 
-  <div class="modal-container modal-container-close">
+  <!-- Для активации модального окна уберите класс "modal-container-close"-->
+
+  <div class="modal-container modal-container-clos">
     <div class="modal modal-auth">
       <button class="modal-close-button"><span class="visually-hidden">Закрыть</span>
         <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
@@ -265,8 +267,12 @@
           <p class="field-group">
             <label class="auth-label" for="arrival-date">Дата Заезда:</label>
             <input class="auth-form-field arrival-date-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату"</input>
+            <!-- Для активации invalid-date добавьте класс "invalid-date-active"-->
+            <span class="invalid-date">Мы не можем отправить вас в прошлое.</span>
             <label class="auth-label" for="departure-date">Дата Выезда:</label>
             <input class="auth-form-field departure-date-field" type="text" id="departure-date" name=" departure-date" placeholder="Укажите дату"</input>
+            <!-- Для активации correct-date добавьте класс "correct-date-active"-->
+            <span class="correct-date">На эти даты есть свободные номера. Пока есть.</span>
             <label class="auth-label adults-able" for="adults">Взрослые:</label>
             <input class="auth-form-field adults-field" type="number" id="adults" name="adults" placeholder="2"</input>
             <span class="kids-label"><label class="auth-label kids-label" for="adults">Дети:</label>
