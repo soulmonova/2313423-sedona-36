@@ -4,14 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link rel="shortcut icon" href="images/favikon.svg">
+    <link rel="icon" sizes="32x32" href="../images/favicon-32x32.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <!-- Шапка -->
   <body>
     <div class="container">
-
     <header class="page-header">
     <nav class="navigation">
 
@@ -253,7 +252,7 @@
     </section>
   </footer>
 
-  <div class="modal-container modal-container-clos">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <button class="modal-close-button"><span class="visually-hidden">Закрыть</span>
         <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
@@ -273,12 +272,12 @@
             <span class="kids-label"><label class="auth-label kids-label" for="adults">Дети:</label>
             </span>
             <span class="tooltip">
-              <button class="tooltip-toggle" type="button">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                 <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                   </svg>
               </button>
-              <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети <br> до 6 лет размещаются бесплатно.</span>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети <br> до 6 лет размещаются бесплатно.</span>
             </span>
             <input class="auth-form-field kids-field" type="number" id="kids" name="kids" placeholder="2"</input>
             <button class="modal-search-button button" type="button">Найти</button>
