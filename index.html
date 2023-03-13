@@ -273,19 +273,43 @@
             <input class="auth-form-field departure-date-field" type="text" id="departure-date" name=" departure-date" placeholder="Укажите дату"</input>
             <!-- Для активации correct-date добавьте класс "correct-date-active"-->
             <span class="correct-date">На эти даты есть свободные номера. Пока есть.</span>
-            <label class="auth-label adults-able" for="adults">Взрослые:</label>
-            <input class="auth-form-field adults-field" type="number" id="adults" name="adults" placeholder="2"</input>
-            <span class="kids-label"><label class="auth-label kids-label" for="adults">Дети:</label>
-            </span>
-            <span class="tooltip">
+            <div class="adults-field-wrapper">
+              <label class="auth-label adults-able" for="adults">Взрослые:</label>
+              <button class="field-button field-button-more" type="button">
+                <svg aria-hidden="true" focusable="false"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+              </button>
+              <input class="auth-form-field adults-field" type="number" id="adults" name="adults" placeholder="2"</input>
+              <button class="field-button field-button-lesser" type="button">
+                <svg aria-hidden="true" focusable="false"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+              </button>
+            </div>
+            <div class="kids-field-wrapper">
+              <span class="kids-label"><label class="auth-label kids-label" for="adults">Дети:</label>
+              </span>
+              <button class="field-button field-button-more" type="button">
+                <svg aria-hidden="true" focusable="false"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+              </button>
+              <span class="tooltip">
               <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                 <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                   </svg>
               </button>
               <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети <br> до 6 лет размещаются бесплатно.</span>
-            </span>
-            <input class="auth-form-field kids-field" type="number" id="kids" name="kids" placeholder="2"</input>
+              </span>
+              <input class="auth-form-field kids-field" type="number" id="kids" name="kids" placeholder="2"</input>
+              <button class="field-button field-button-lesser" type="button">
+              <svg aria-hidden="true" focusable="false"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+              </svg>
+              </button>
+            </div>
             <button class="modal-search-button button" type="button">Найти</button>
           </p>
         </form>
