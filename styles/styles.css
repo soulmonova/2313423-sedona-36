@@ -90,13 +90,6 @@ body {
   margin: 0;
   margin-bottom: 8px;
 }
-
-.hotels-filters-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
 .navigation {
   display: flex;
   height: 64px;
@@ -145,10 +138,6 @@ body {
 .navigation-link {
   display: block;
   padding: 20px 16px;
-  font-family: "PT  Sans", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
   color: inherit;
   text-decoration: none;
 }
@@ -192,12 +181,18 @@ body {
 }
 
 .navigation-list {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
   display: flex;
   flex-wrap: wrap;
   min-width: 575px;
   justify-content: flex-start;
   align-items: center;
   margin: 0;
+  padding: 0;
+  padding-left: 30px;
 }
 
 .advantages-list {
@@ -209,7 +204,7 @@ body {
 
 .inner-wrapper{
   background-size: cover;
-  min-height: 412px;
+  height: 412px;
   background-image: url(../images/hotels/filter-background.jpeg);
   background-color: #a1a1a1;
   padding: 35px 70px 70px 70px;
@@ -249,6 +244,10 @@ body {
 }
 
 .breadcrumbs-link {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
   text-decoration: none;
   cursor: pointer;
 }
@@ -284,11 +283,35 @@ body {
   color: #000000;
 }
 
+.main-header-recomendation {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
 .header-description {
   text-align: center;
   color: #000000;
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
+}
+
+.header-description-recomendation {
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.header-description-subscribe {
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .hero {
@@ -353,6 +376,14 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+  margin-right: 70px;
+}
+
+.hotels-filter-group-last {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 149.57px;
 }
 
 .form-wrapper {
@@ -420,7 +451,19 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 112.5px;
+  padding-top: 102px;
+  margin: 0;
+  margin-bottom: 62px;
+  position: relative;
+}
+
+.advantages-title-square {
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 112px;
   margin: 0;
   margin-bottom: 62px;
   position: relative;
@@ -433,7 +476,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   left: 50%;
-  top: 125%;
+  top: 188px;
   margin-left: -30px;
 }
 
@@ -454,7 +497,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  height: 384px;
+  height: 385px;
   background-color: #82B3D3;
   color: #ffffff;
 }
@@ -503,7 +546,7 @@ body {
 /* Recommendations */
 
 .recommendations {
-  margin-bottom: 69px;
+  margin-bottom: 96px;
 }
 
 .recommendations-list {
@@ -581,6 +624,10 @@ body {
 .select-control {
   width: 292px;
   height: 49px;
+  font-style: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
   cursor: pointer;
   -webkit-appearance: none;
           appearance: none;
@@ -615,7 +662,6 @@ body {
   display: flex;
   align-items: center;
   width: 1060px;
-  gap: 70px;
 }
 
 .hotels-filter-item:hover {
@@ -633,7 +679,7 @@ body {
 }
 
 .catalog {
-  margin-top: 56.5px;
+  margin-top: 50px;
 }
 
 .hotels-list {
@@ -673,7 +719,7 @@ body {
 /* Boocking */
 
 .booking {
-  margin-bottom: 69px;
+  margin-bottom: 96px;
 }
 
 /* Buttons */
@@ -704,7 +750,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   margin-left: 20px;
-  padding: 8px 50px;
+  padding: 8px 34px;
   cursor: pointer;
 }
 
@@ -857,9 +903,12 @@ body {
 
 .hotels-filter-title{
   font-style:  "PT Sans", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
   margin-bottom: 32px;
-
+  font-family: inherit;
+  padding: 0;
 }
 
 .hotels-filter-form {
@@ -870,8 +919,8 @@ body {
 
 .filter-buttons-wrapper {
   position: absolute;
-  top: 60px;
-  left: 849px;
+  top: 56px;
+  left: 869px;
 }
 
 /* Checkbox */
@@ -879,6 +928,8 @@ body {
 .checkbox-text {
   display: inline-block;
   font-style: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
   font-weight: 400;
   margin: 0;
 }
@@ -947,7 +998,7 @@ body {
   background-color: #3F5E72;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .control-input:checked + .radio::before{
@@ -1010,7 +1061,8 @@ body {
   font-style: inherit;
   font-size: 18px;
   font-weight: 400;
-  color: black;
+  color: #000000;
+  height: 48px;
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
   border: none;
@@ -1020,7 +1072,8 @@ body {
   font-style: inherit;
   font-size: 18px;
   font-weight: 400;
-  color: black;
+  color: #000000;
+  height: 48px;
   padding: 12px 20px;
   border-radius: 0 4px 4px 0;
   border: none;
@@ -1029,7 +1082,7 @@ body {
 
 .range-scale {
   height: 4px;
-  margin-top: 48px;
+  margin-top: 44px;
   background-color: #5e676b;
 }
 
@@ -1037,7 +1090,7 @@ body {
   position: absolute;
   height: 4px;
   background-color: #f2f2f2;
-  width: 288px;
+  width: 226px;
   display: flex;
   justify-content: space-between;
   border: none;
@@ -1090,7 +1143,7 @@ body {
 
 .toggle-max {
   position: absolute;
-  left: 226px;
+  left: 206px;
   top: -8px;
   right: 0;
 }
@@ -1334,10 +1387,10 @@ body {
 .subscribe {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 96px;
   align-items: center;
   text-align: center;
-  height: 415px;
+  height: 414.86px;
   background-image: url("../images/subscribe.jpg");
   background-color: #a1a1a1;
 }
@@ -1360,7 +1413,7 @@ body {
   color:#ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .subscribe-description {
@@ -1381,6 +1434,7 @@ body {
   border-radius: 4px 0 0 4px;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 400;
   padding-left: 20px;
   outline: none;
 }
@@ -1403,14 +1457,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 .page-footer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 71.67px 45px 70.1px 35px;
+  width: 100%;
   height: 120px;
   text-decoration: none;
   background-color: #ffffff;
@@ -1420,7 +1473,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 142px;
+  min-width: 99.66px;
   height: 40px;
   list-style: none;
 }
