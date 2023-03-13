@@ -264,7 +264,7 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="auth-form" action="https://htmlacademy.ru/" method="post">
-          <p class="field-group">
+          <fieldset class="field-group">
             <label class="auth-label" for="arrival-date">Дата Заезда:</label>
             <input class="auth-form-field arrival-date-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату"</input>
             <!-- Для активации invalid-date добавьте класс "invalid-date-active"-->
@@ -289,20 +289,20 @@
             </div>
             <div class="kids-field-wrapper">
               <span class="kids-label"><label class="auth-label kids-label" for="adults">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                      </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети <br> до 6 лет размещаются бесплатно.</span>
+                  </span>
               </span>
               <button class="field-button field-button-more" type="button">
                 <svg aria-hidden="true" focusable="false"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
                 </svg>
               </button>
-              <span class="tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
-                  </svg>
-              </button>
-              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети <br> до 6 лет размещаются бесплатно.</span>
-              </span>
               <input class="auth-form-field kids-field" type="number" id="kids" name="kids" placeholder="2"</input>
               <button class="field-button field-button-lesser" type="button">
               <svg aria-hidden="true" focusable="false"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -311,7 +311,7 @@
               </button>
             </div>
             <button class="modal-search-button button" type="button">Найти</button>
-          </p>
+          </fieldset>
         </form>
       </section>
     </div>
