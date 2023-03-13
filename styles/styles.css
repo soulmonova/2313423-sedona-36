@@ -1684,6 +1684,7 @@ body {
 
 .adults-field-wrapper {
   display: flex;
+  align-items: center;
   grid-column: 1/3;
   grid-row: 3/4;
   width: 247px;
@@ -1691,11 +1692,14 @@ body {
 
 .adults-field {
   width: 36px;
+  height: 48px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  border: none;
   border-radius: 0;
-}
-
-.adults-field:focus {
-  outline: 3px solid #82B3D3;
+  background-color: #f2f2f2;
 }
 
 .adults-field:hover {
@@ -1704,18 +1708,23 @@ body {
 
 .kids-field {
   width: 36px;
+  height: 48px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  border: none;
+  border-radius: 0;
+  background-color: #f2f2f2;
 }
 
 .kids-field-wrapper {
   display: flex;
+  align-items: center;
   grid-column: 3/5;
   grid-row: 3/4;
-  width: 247px;
+  width: 242px;
   margin-left: auto;
-}
-
-.kids-field:focus {
-  outline: 3px solid #82B3D3;
 }
 
 .kids-field:hover {
@@ -1732,22 +1741,29 @@ body {
 .adults-label {
   grid-column: 1/2;
   grid-row: 3/4;
+  width: 150px;
   padding-right: 10px;
 }
 
 .kids-label{
   grid-column: 3/4;
   grid-row: 3/4;
+  width: 150px;
   position: relative;
   padding-right: 10px;
+}
+
+.kids-label::after {
+  position: absolute;
+
 }
 
 .field-button {
   display: grid;
   align-items: center;
+  justify-content: center;
   width: 40px;
   height: 48px;
-  padding: 14px, 10px;
   background-color: #f2f2f2;
   border: none;
 }
@@ -1756,20 +1772,21 @@ body {
   background-color: #E6E6E6;
 }
 
-.field-button:focus {
+.field-button:focus svg {
   outline: 3px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .field-button-more {
-  border-radius: 10px 0 0 10px;
+  border-radius: 4px 0 0 4px;
 }
 
 .field-button-lesser {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .tooltip {
-  position: relative;
+  position: absolute;
 }
 
 .tooltip-toggle {
