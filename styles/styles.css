@@ -373,6 +373,7 @@ body {
 }
 
 .hotels-filter-group {
+  width: 150.43px;
   border: none;
   margin: 0;
   padding: 0;
@@ -380,10 +381,11 @@ body {
 }
 
 .hotels-filter-group-last {
+  width: 150.43px;
   border: none;
   margin: 0;
   padding: 0;
-  margin-right: 149.57px;
+  margin-right: 140.15px;
 }
 
 .form-wrapper {
@@ -829,7 +831,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .button-apply:hover {
@@ -1049,6 +1051,16 @@ body {
   right: 20px;
 }
 
+.range-input {
+  font-style: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  height: 48px;
+  padding: 12px 20px;
+}
+
 .range-input:hover {
   background-color: #E6E6E6;
 }
@@ -1058,23 +1070,11 @@ body {
 }
 
 .range-input-min {
-  font-style: inherit;
-  font-size: 18px;
-  font-weight: 400;
-  color: #000000;
-  height: 48px;
-  padding: 12px 20px;
   border-radius: 4px 0 0 4px;
   border: none;
 }
 
 .range-input-max {
-  font-style: inherit;
-  font-size: 18px;
-  font-weight: 400;
-  color: #000000;
-  height: 48px;
-  padding: 12px 20px;
   border-radius: 0 4px 4px 0;
   border: none;
   margin-left: 2px;
@@ -1677,7 +1677,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #FF5757;
-  top: 45px;
+  top: 48px;
   left: 157px;
   display: none;
 }
@@ -1692,7 +1692,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
-  top: 140px;
+  top: 144px;
   left: 157px;
   display: none;
 }
@@ -1754,6 +1754,7 @@ body {
   border: none;
   border-radius: 0;
   background-color: #f2f2f2;
+  padding: 14px 10px;
 }
 
 .adults-field:hover {
@@ -1770,6 +1771,7 @@ body {
   border: none;
   border-radius: 0;
   background-color: #f2f2f2;
+  padding: 14px 10px;
 }
 
 .kids-field-wrapper {
@@ -1820,6 +1822,7 @@ body {
   height: 48px;
   background-color: #f2f2f2;
   border: none;
+  cursor: pointer;
 }
 
 .field-button:hover {
