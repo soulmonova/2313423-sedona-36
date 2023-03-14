@@ -811,7 +811,6 @@ body {
   background-color: #E5E5E5;
   min-width: 160px;
   color: #ffffff;
-  background-color: #756157;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1591,9 +1590,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  min-width: 99.66px;
+  min-width: 120px;
   height: 40px;
   list-style: none;
+}
+
+.footer-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .social-item {
