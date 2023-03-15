@@ -1118,6 +1118,10 @@ body {
   outline: 3px solid  #82B3D3;
 }
 
+.range-input:focus + span {
+  opacity: 0;
+}
+
 .range-input:disabled {
   background: rgba(0, 0, 0, 0.3);
   font-size: 18px;
@@ -1127,7 +1131,7 @@ body {
   width: 143px;
   height: 48px;
   padding: 12px 20px;
- }
+}
 
 .range-input-min {
   border-radius: 4px 0 0 4px;
