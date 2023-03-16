@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  }
+}
 
 @font-face {
   font-family: "PT Sans";
@@ -60,7 +60,7 @@ body {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -73,9 +73,11 @@ body {
 
 .page-header {
   width: 100%;
-  height: 64px;
+  min-height: 64px;
   margin: 0 auto;
   color: #000000;
+  position: relative;
+  overflow: visible;
 }
 
 .navigation-logo {
@@ -83,7 +85,9 @@ body {
   height: 64px;
   padding: 0;
   cursor: pointer;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  z-index: 10;
 }
 
 .inner-header-title {
@@ -93,9 +97,10 @@ body {
   margin: 0;
   margin-bottom: 8px;
 }
+
 .navigation {
   display: flex;
-  height: 64px;
+  min-height: 64px;
   max-width: 1200px;
   align-items: center;
   background-color: #ffffff;
@@ -155,7 +160,7 @@ body {
 }
 
 .navigation-link:hover {
-  color:rgba(0, 0,0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .navigation-link-current {
@@ -164,7 +169,7 @@ body {
 
 .navigation-link-current::after {
   position: absolute;
-  content: "";
+  content: " ";
   height: 2px;
   background-color: #756157;
   left: 16px;
@@ -185,7 +190,8 @@ body {
 }
 
 .user-navigation-link:hover {
-  fill: rgba(0, 0,0, 0.5);;
+  fill: rgba(0, 0, 0, 0.5);
+  ;
 }
 
 .link-favorite {
@@ -204,7 +210,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-left: 30px;
+  padding-left: 170px;
 }
 
 .advantages-list {
@@ -214,7 +220,7 @@ body {
   margin: 0 auto;
 }
 
-.inner-wrapper{
+.inner-wrapper {
   background-size: cover;
   height: 412px;
   background-image: url(../images/hotels/filter-background.jpeg);
@@ -236,7 +242,7 @@ body {
 }
 
 .breadcrumbs-item:not(:first-child)::before {
-  content:" ";
+  content: " ";
   display: block;
   align-items: center;
   background-image: url("../images/navigation-icons/arrow.svg");
@@ -253,7 +259,7 @@ body {
 }
 
 .breadcrumbs-item:hover path {
-  fill:rgba(255, 255, 255, 0.6);;
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link {
@@ -308,21 +314,21 @@ body {
 
 .header-description {
   text-align: center;
-  color: #000000;
+  color: #333333;
   margin: 0;
   margin-bottom: 90px;
 }
 
 .header-description-recomendation {
   text-align: center;
-  color: #000000;
+  color: #333333;
   margin: 0;
   margin-bottom: 64px;
 }
 
 .header-description-subscribe {
   text-align: center;
-  color: #000000;
+  color: #333333;
   margin: 0;
   margin-bottom: 54px;
 }
@@ -348,7 +354,7 @@ body {
   height: 57px;
 }
 
-.hero-background{
+.hero-background {
   width: 1200px;
   background-repeat: no-repeat;
 }
@@ -371,7 +377,7 @@ body {
   color: #ffffff;
 }
 
-.hotels-filter-list{
+.hotels-filter-list {
   margin: 0;
   padding: 0;
 }
@@ -385,7 +391,7 @@ body {
   margin-right: 70px;
   border-radius: 4px;
   border: 2px;
-  border-color: #E5E5E5  ;
+  border-color: #E5E5E5;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -423,7 +429,7 @@ body {
 }
 
 .hotel-card-wrapper::after {
-  content: "";
+  content: " ";
   display: block;
   width: 1060px;
   height: 1px;
@@ -434,7 +440,7 @@ body {
   margin-bottom: 40px;
 }
 
-.hotel-card-link{
+.hotel-card-link {
   text-decoration: none;
   color: #000000;
   font-size: 24px;
@@ -496,7 +502,7 @@ body {
 }
 
 .advantages-title::after {
-  content:"";
+  content: " ";
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -507,7 +513,7 @@ body {
 }
 
 .advantages-title-square::after {
-  content:"";
+  content: " ";
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -517,7 +523,7 @@ body {
   margin-left: -30px;
 }
 
-.advantages-item-city .advantages-title::after{
+.advantages-item-city .advantages-title::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -525,6 +531,16 @@ body {
   width: 240px;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+}
+
+.advantages-description-city {
+  width: 240px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
   text-align: center;
   margin: 0;
 }
@@ -576,7 +592,7 @@ body {
   color: #ffffff;
 }
 
-.advantages-item-bridge .advantages-title::after{
+.advantages-item-bridge .advantages-title::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -609,11 +625,12 @@ body {
   width: 230px;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
   padding: 0;
   margin: 0 auto;
 }
 
-.recommendations-item-houses{
+.recommendations-item-houses {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -661,18 +678,19 @@ body {
 .select-control {
   width: 292px;
   height: 49px;
-  font-family:"PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   cursor: pointer;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   padding-left: 20px;
   padding-right: 40px;
   background-image: url("../images/hotels/arrow-down.svg");
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -706,7 +724,7 @@ body {
 }
 
 .hotels-filter-item:active {
-  color: rgba(255, 255, 255, 0.1); ;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .filter-buttons-wrapper {
@@ -744,6 +762,7 @@ body {
 .hotel-info-price {
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
   grid-column: 2/3;
   grid-row: 2;
   text-align: end;
@@ -845,7 +864,7 @@ body {
 }
 
 .button-subscribe {
-  width: 232px;
+  min-width: 232px;
   height: 52px;
   background-color: #82B3D3;
   border-style: none;
@@ -905,7 +924,7 @@ body {
   line-height: 20px;
 }
 
-.button-reset:hover{
+.button-reset:hover {
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -947,11 +966,11 @@ body {
 }
 
 .button-light-current {
-  border-color:#000000
+  border-color: #000000
 }
 
-.hotels-filter-title{
-  font-style:  "PT Sans", Arial, sans-serif;
+.hotels-filter-title {
+  font-style: "PT Sans", Arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -983,7 +1002,7 @@ body {
   margin: 0;
 }
 
-.checkbox{
+.checkbox {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -993,11 +1012,11 @@ body {
   position: relative;
 }
 
-.control:hover .checkbox{
+.control:hover .checkbox {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.control:active .checkbox{
+.control:active .checkbox {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -1022,7 +1041,7 @@ body {
   transition: .2s;
 }
 
-.control-input:checked + .checkbox::before{
+.control-input:checked + .checkbox::before {
   opacity: 1;
 }
 
@@ -1050,21 +1069,21 @@ body {
   transition: 0.2s;
 }
 
-.control-input:checked + .radio::before{
+.control-input:checked + .radio::before {
   opacity: 1;
 }
 
-.control:hover .radio{
+.control:hover .radio {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.control:active .radio{
+.control:active .radio {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Range-bar*/
 
-.range{
+.range {
   position: relative;
 }
 
@@ -1082,9 +1101,10 @@ body {
   text-align: right;
   position: relative;
 }
+
 .text-min {
   position: absolute;
-  margin:0;
+  margin: 0;
   margin-left: 4px;
   top: 12px;
   right: 20px;
@@ -1092,7 +1112,7 @@ body {
 
 .text-max {
   position: absolute;
-  margin:0;
+  margin: 0;
   margin-left: 4px;
   top: 12px;
   right: 20px;
@@ -1115,7 +1135,7 @@ body {
 }
 
 .range-input:focus-visible {
-  outline: 3px solid  #82B3D3;
+  outline: 3px solid #82B3D3;
 }
 
 .range-input:focus + span {
@@ -1184,15 +1204,15 @@ body {
 }
 
 .range-toggle:hover {
-  box-shadow: 0 4px 10px rgba(0, 0,0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
-  box-shadow: 0 4px 10px rgba(0, 0,0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus-visible {
-  outline: 3px solid #82B3D3;;
+  outline: 3px solid #82B3D3;
 }
 
 .range-toggle:active {
@@ -1380,7 +1400,7 @@ body {
   margin: 0;
 }
 
-.hotel-info{
+.hotel-info {
   font-size: 18px;
   line-height: 21px;
   grid-column: 1;
@@ -1436,7 +1456,7 @@ body {
 }
 
 .pagination-button:active {
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
@@ -1457,17 +1477,27 @@ body {
   text-align: center;
 }
 
-/* Subscrib */
+/* Subscribe */
 
 .subscribe {
   display: flex;
   flex-direction: column;
   padding-top: 96px;
+  padding-bottom: 104px;
   align-items: center;
   text-align: center;
-  height: 414.86px;
+  min-height: 414.86px;
   background-image: url("../images/subscribe.jpg");
+  background-size: cover;
   background-color: #a1a1a1;
+}
+
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  min-height: 214.86px;
 }
 
 .subscribe-inner {
@@ -1475,9 +1505,10 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 415px;
+  min-height: 258.86px;
   margin: 0;
   padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscribe-header {
@@ -1485,7 +1516,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  color:#ffffff;
+  color: #ffffff;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
@@ -1517,7 +1548,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  color: #000000;
+  color: #333333;
   margin-top: 0;
   margin-bottom: 54px;
 }
@@ -1562,7 +1593,7 @@ body {
 
 .subscribe-form {
   display: flex;
-  width: 684px;
+  max-width: 900px;
   padding: 0;
   margin: 0;
 }
@@ -1585,7 +1616,7 @@ body {
   justify-content: center;
   padding: 40px 70px 30px 70px;
   width: 100%;
-  height: 120px;
+  min-height: 120px;
   text-decoration: none;
   background-color: #ffffff;
 }
@@ -1594,16 +1625,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  min-width: 120px;
-  height: 40px;
+  width: 150px;
+  min-height: 40px;
   list-style: none;
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 .social-item {
@@ -1620,7 +1653,11 @@ body {
 }
 
 .social-item:focus path {
-  fill:#68A2CA
+  fill: #68A2CA
+}
+
+.social-item:active path {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .social-item:disabled path {
@@ -1634,8 +1671,11 @@ body {
 }
 
 .footer-contacts-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 115px;
-  height: 33px;
+  min-height: 33px;
 }
 
 .footer-logo {
@@ -1648,8 +1688,15 @@ body {
   fill: #756157;
 }
 
+.footer-logo:active path {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 .footer-contacts-phone {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 331px;
 }
 
 .contact-phone {
@@ -1696,7 +1743,6 @@ body {
   width: 717px;
   min-height: 576px;
   border-radius: 30px;
-
 }
 
 .modal-container-close {
@@ -1767,7 +1813,7 @@ body {
 
 .modal-search-button:active {
   background-color: #68A2CA;
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
@@ -1860,6 +1906,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
+
 .departure-date-field path {
   fill: rgba(0, 0, 0, 0.3);
 }
@@ -1929,7 +1976,7 @@ body {
   padding-right: 10px;
 }
 
-.kids-label{
+.kids-label {
   grid-column: 3/4;
   grid-row: 3/4;
   width: 150px;
@@ -1939,7 +1986,6 @@ body {
 
 .kids-label::after {
   position: absolute;
-
 }
 
 .field-button {
@@ -1957,9 +2003,18 @@ body {
   background-color: #E6E6E6;
 }
 
+.field-button:hover path {
+  fill: #000000;
+}
+
 .field-button:focus svg {
   outline: 3px solid #82B3D3;
+  fill: #000000;
   border-radius: 4px;
+}
+
+.field-button:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .field-button-more {
@@ -2009,14 +2064,14 @@ body {
 
 .tooltip-text::before {
   position: absolute;
-  content:'';
+  content: " ";
   background-image: url("../images/modal-icons/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
   transform: rotate(360deg);
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2029,7 +2084,7 @@ body {
 .range-filter-label input::-webkit-outer-spin-button,
 .range-filter-label input::-webkit-outer-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -2039,11 +2094,50 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input::-webkit-input-placeholder       {opacity: 1; -webkit-transition: opacity 0.3s; transition: opacity 0.3s;}
-input::-moz-placeholder                {opacity: 1; -moz-transition: opacity 0.3s; transition: opacity 0.3s;}
-input:-moz-placeholder                 {opacity: 1; -moz-transition: opacity 0.3s; transition: opacity 0.3s;}
-input:-ms-input-placeholder            {opacity: 1; -ms-transition: opacity 0.3s; transition: opacity 0.3s;}
-input:focus::-webkit-input-placeholder {opacity: 0; -webkit-transition: opacity 0.3s; transition: opacity 0.3s;}
-input:focus::-moz-placeholder          {opacity: 0; -moz-transition: opacity 0.3s; transition: opacity 0.3s;}
-input:focus:-moz-placeholder           {opacity: 0; -moz-transition: opacity 0.3s; transition: opacity 0.3s;}
-input:focus:-ms-input-placeholder      {opacity: 0; -ms-transition: opacity 0.3s; transition: opacity 0.3s;}
+input::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input:-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
