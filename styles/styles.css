@@ -218,7 +218,7 @@ body {
 
 .inner-wrapper {
   background-size: cover;
-  height: 412px;
+  min-height: 412px;
   background-image: url(../images/hotels/filter-background.jpeg);
   background-color: #a1a1a1;
   padding: 35px 70px 70px 70px;
@@ -889,7 +889,7 @@ body {
 
 .button-apply {
   width: 191px;
-  height: 36px;
+  min-height: 36px;
   background-color: #82B3D3;
   font-size: 16px;
   line-height: 20px;
@@ -915,7 +915,7 @@ body {
 
 .button-reset {
   width: 191px;
-  height: 36px;
+  min-height: 36px;
   background-color: transparent;
   font-size: 16px;
   line-height: 20px;
@@ -1017,6 +1017,10 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.control-input:focus + .checkbox {
+  outline: 3px solid #82B3D3;
+}
+
 .control {
   display: flex;
   justify-content: flex-start;
@@ -1076,6 +1080,10 @@ body {
 
 .control:active .radio {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.control-input:focus + .radio{
+  outline: 3px solid #82B3D3;
 }
 
 /* Range-bar*/
@@ -1639,6 +1647,7 @@ body {
 .social-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 47.33px;
   height: 40px;
   padding: 0 10px;
@@ -1693,7 +1702,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 331px;
+  width: 335px;
 }
 
 .contact-phone {
@@ -1996,6 +2005,7 @@ body {
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .field-button:hover {
@@ -2018,10 +2028,12 @@ body {
 
 .field-button-more {
   border-radius: 4px 0 0 4px;
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .field-button-lesser {
   border-radius: 0 4px 4px 0;
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .tooltip {
