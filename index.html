@@ -315,14 +315,16 @@
                 <span class="correct-date correct-date-active">На эти даты есть свободные номера. Пока есть.</span>
                 <div class="adults-field-wrapper">
                   <label class="auth-label adults-label" for="adults">Взрослые:</label>
-                  <button class="field-button field-button-more" type="button">
+                  <button class="field-button field-button-lesser" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
                     <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z"/>
                     </svg>
                   </button>
                   <input class="adults-field" type="number" id="adults" name="adults" placeholder="2">
-                  <button class="field-button field-button-lesser" type="button">
+                  <button class="field-button field-button-more" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
                     <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
@@ -330,7 +332,7 @@
                   </button>
                 </div>
                 <div class="kids-field-wrapper">
-                  <span class="kids-label"><label class="auth-label kids-label" for="adults">Дети:</label>
+                  <span class="kids-label"><label class="auth-label kids-label" for="kids">Дети:</label>
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                         <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none"
@@ -342,16 +344,16 @@
                         будут с вами, возраст которых от 6 до 18 лет. Дети <br> до 6 лет размещаются бесплатно.</span>
                     </span>
                   </span>
-                  <button class="field-button field-button-more" type="button">
-                    <span class="visually-hidden">Увеличить количество детей</span>
+                  <button class="field-button field-button-lesser" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
                     <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z"/>
                     </svg>
                   </button>
                   <input class="kids-field" type="number" id="kids" name="kids" placeholder="2">
-                  <button class="field-button field-button-lesser" type="button">
-                    <span class="visually-hidden">Уменьшить количество детей</span>
+                  <button class="field-button field-button-more" type="button">
+                    <span class="visually-hidden">Увеличить количество детей</span>
                     <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
