@@ -109,6 +109,7 @@ body {
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   padding: 0;
@@ -1426,8 +1427,8 @@ body {
 }
 
 .pagination-item {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   margin-right: 8px;
 }
 
@@ -1442,8 +1443,8 @@ body {
 }
 
 .pagination-button {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   color: #ffffff;
   background-color: #82B3D3;
   font-size: 20px;
@@ -1466,8 +1467,8 @@ body {
 }
 
 .pagination-current {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   color: #000000;
   background-color: #F2F2F2;
   font-size: 20px;
