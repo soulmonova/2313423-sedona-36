@@ -226,7 +226,7 @@ img {
   background-size: cover;
   min-height: 412px;
   background-image: url(../images/hotels/filter-background.jpeg);
-  background-color: #a1a1a1;
+  background-color: #84afcd;
   padding: 35px 70px 57px 70px;
   color: #ffffff;
   margin-bottom: 50px;
@@ -342,7 +342,7 @@ img {
   margin-bottom: 69px;
   padding-top: 51px;
   background-image: url("../images/index-background.jpg");
-  background-color: #a1a1a1;
+  background-color: #ddeaf2;
   position: relative;
 }
 
